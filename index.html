@@ -14,15 +14,14 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
-    
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" href="Swiper-3.2.7/dist/css/swiper.min.css">
+
 </head>
     
 <body>
     
 <header class="main-header">
-    <nav class="main-navigation" role="navigation">
+    <nav class="main-navigation" id="menu-right" role="navigation">
         <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
@@ -59,9 +58,26 @@
         </div>
             
         <div class="square sliders-first-module">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
         </div>
-        
         <div class="square sliders-second-module">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/slider-nyc.jpg" width="100%" height="100%" alt=""></div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
         </div>
     </section>
     
@@ -77,8 +93,13 @@
         </div>
     </section>
 </main>
-<script src="js/toggleMenu.js"></script>
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="Swiper-3.2.7/dist/js/swiper.jquery.js"></script>
+<script src="Swiper-3.2.7/dist/js/swiper.jquery.min.js"></script>
+<script src="Swiper-3.2.7/dist/js/swiper.min.js"></script>
+<script src="js/toggleMenu.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/prevent-default.js"></script>
 </body>
 </html>
