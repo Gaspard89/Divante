@@ -1,0 +1,30 @@
+{
+  "name": "divante",
+  "version": "1.0.0",
+  "description": "Technical review",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaspard89/Divante.git"
+  },
+  "author": "Kasper Ślusarczyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gaspard89/Divante/issues"
+  },
+  "homepage": "https://github.com/Gaspard89/Divante#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-jshint": "^2.0.0",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1",
+    "jshint": "^2.8.0"
+  }
+}
