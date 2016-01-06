@@ -1,9 +1,9 @@
 
 @headerBackground: #373F51;
 @mainColor: #CC3F0C;
+@blueColor:#006699;
 @images: "images/";
 @transition: all 0.5s ease;
-
 
 
 body {
@@ -96,6 +96,14 @@ main {
             }
         }
     }
+    @media screen {
+        @media (max-height:420px) {
+            li a {
+                font-size: 15px;
+                padding: 15px 15px;
+            }
+        }
+    }
 }
 #toggle-nav {
     display: none;
@@ -130,6 +138,13 @@ main {
     background-color: @mainColor;
     padding: 50px 0 50px 0;
     overflow: hidden;
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    -ms-transition: @transition;
+    &:hover {
+        background-color:@blueColor; 
+    }
     @media screen {
         @media (max-width:768px) {
             padding: 25px 0 25px 0; 
@@ -275,7 +290,7 @@ main {
         @media screen {
         @media (max-width:768px){
             span{
-            line-height: 104px;
+            line-height: 106px;
             }
             span .fa {
                 font-size: 40px;
@@ -311,7 +326,7 @@ main {
     float: left;
     width: 30%;
     height: 100%;
-    background-color: #006699;
+    background-color: @blueColor;
     -webkit-transition: @transition;
     -moz-transition: @transition;
     -o-transition: @transition;
@@ -339,11 +354,13 @@ main {
 
 .sliders-first-module {
     .sliders-link;
+    background-color: #fff;
     width: 35%;
 }
 
 .sliders-second-module {
     .sliders-link;
+    background-color: #fff;
     width: 35%;
     }
 
@@ -352,18 +369,12 @@ main {
         @media (max-width:980px){
             float: none;
             width:100%;
-            height:400px;
-            span { 
-                line-height: 400px;
-            }
+            height:100%;
         }
     }
     @media screen{
     @media (max-width:480px){
-        height:300px;
-        span { 
-            line-height: 300px;
-            }
+        height:100%;
         }
     }
 }
